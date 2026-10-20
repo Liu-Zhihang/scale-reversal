@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "scale-reversal: computations for a study of scale reversal in quantum range queries"
+type: software
+version: 1.0.0
+date-released: 2026-10-20
+license: MIT
+authors:
+  - name: "Anonymous for double-blind review"
+abstract: >-
+  Study package that reproduces the published counts, price sweep,
+  amplitude-amplification sensitivity, reconstruction-task comparison and
+  figures of one manuscript by calling the qrq library.
+keywords:
+  - range query
+  - quantum algorithms
+  - resource estimation
+  - trajectory data
+  - reproducibility

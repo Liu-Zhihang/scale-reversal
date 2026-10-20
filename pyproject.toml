@@ -1,0 +1,39 @@
+[build-system]
+requires = ["scikit-build-core>=0.11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "scale-reversal"
+version = "1.0.0"
+description = "Computations of the accompanying manuscript on scale reversal of quantum and classical range-query costs; every computation calls qrq."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Anonymous for double-blind review" }]
+keywords = ["range query", "quantum algorithms", "resource estimation", "trajectory data", "reproducibility"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = ["qrq==0.2.0", "numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pandas>=1.5"]
+figures = ["pandas>=1.5", "matplotlib>=3.8", "Pillow", "geopandas", "shapely", "pyproj", "contextily", "requests"]
+
+[project.scripts]
+scale-reversal = "scale_reversal.cli:main"
+
+[tool.scikit-build]
+minimum-version = "0.11"
+wheel.cmake = false
+wheel.packages = ["src/scale_reversal"]
+sdist.include = ["docs/*", "tests/*", "figures/*"]
+sdist.exclude = ["build", ".venv", "figure_output"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
