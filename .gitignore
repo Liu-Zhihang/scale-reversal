@@ -1,0 +1,8 @@
+# Rendered figures and Python caches
+figure_output/
+__pycache__/
+*.py[cod]
+
+# PNG outputs anywhere except the documentation
+*.png
+!docs/**/*.png
