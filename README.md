@@ -47,6 +47,28 @@ are in `docs/reproduction.md`; the public sources are listed in
 
 ## Figures
 
+Previews of the manuscript figures. The scripts in `figures/` redraw Figures
+1-6 and Supplementary Figures S1-S3 from the source tables. Figure 7 is the
+evaluation checklist.
+
+![One window, two decisions](docs/figures/figure1_framework.png)
+
+![Where the observations are](docs/figures/figure2_observation_geography.png)
+
+![Enlarging the window can make quantum filtering the cheaper route](docs/figures/figure3_reversal.png)
+
+![Cheaper windows do not reconstruct urban readings better](docs/figures/figure4_tasks.png)
+
+![Prices move scale reversal but do not remove it](docs/figures/figure5_prices.png)
+
+![Reversals follow record accumulation, not simply the city centre](docs/figures/figure6_boundary_geography.png)
+
+![Checklist for a quantum data-access claim](docs/figures/figure7_checklist.png)
+
+![Same-answer intervention](docs/figures/figureS2_same_answer.png)
+
+![Monitoring contrasts in Jinan and Dublin](docs/figures/figureS3_monitoring.png)
+
 ```bash
 SR_FIGURE_DATA=/path/to/source_data SR_EVIDENCE=/path/to/archive python figures/make_all.py
 ```
