@@ -42,7 +42,7 @@ contrasts = json.loads((EVIDENCE / "cities_jinan_e1_20260921_v1r1/metrics/paired
 jdays = {w: next(c for c in contrasts if c["axis"] == "time" and int(c["fixed_scale"]) == w and int(c["small"]) == 3600)
          for w in (2000, 5000)}
 assert jdays[2000]["n_pairs"] == 127 and jdays[5000]["n_pairs"] == 143
-J_UP, J_DOWN = 52, 39   # Table 3, Jinan monitoring forward pairs
+J_UP, J_DOWN = 52, 39   # Table 2, Jinan monitoring forward pairs
 
 # ---- Dublin ----------------------------------------------------------------
 dg = pd.read_csv(S.SOURCE / "figureS3_dublin_grid.csv")

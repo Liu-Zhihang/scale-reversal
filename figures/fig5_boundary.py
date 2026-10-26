@@ -1,4 +1,4 @@
-"""Figure 5: one resource boundary, and where cities meet it.
+"""Figure 6: one resource boundary, and where cities meet it.
 
 Figure contract
 - Claim: every window's ordering follows one break-even rule. Quantum filtering
@@ -175,4 +175,4 @@ ax_d.legend(handles=[Line2D([], [], ls="none", marker="o", ms=3.6, markerfacecol
 for ax, letter in zip([ax_a, ax_b, ax_c, ax_d], "abcd"):
     S.panel_label(ax, letter)
 
-S.save(fig, "figure5_boundary_geography")
+S.save(fig, "figure6_boundary_geography")

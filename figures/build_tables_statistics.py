@@ -5,8 +5,8 @@ archive. All scientific source tables are copied as derived views with input
 hashes. The figures themselves are drawn by the fig*.py scripts in this folder
 from these tables.
 
-Table names keep their historical numerical prefixes: figure2_* feed Figure 3,
-figure3_* Figure 4, figure4_* Figure 5 and figure5_* Figure 6.
+Table names keep their historical numerical prefixes. figure2_* feed Figure 3,
+figure3_* Figure 5, figure4_* Figure 6 and figure5_* Figure 4.
 
 Reads SR_EVIDENCE. Writes the tables to SR_FIGURE_DATA (or --out) and the input
 hashes to <out>/provenance/provenance.json.
@@ -110,8 +110,8 @@ def main(argv=None):
     record.parent.mkdir(exist_ok=True)
     record.write_text(json.dumps({
         'backend': 'Python/matplotlib', 'width_mm': 190, 'png_dpi': 1000,
-        'drawn_by': {'figure3': 'figures/fig3_reversal.py', 'figure4': 'figures/fig4_prices.py',
-                     'figure5': 'figures/fig5_boundary.py', 'figure6': 'figures/fig6_tasks.py'},
+        'drawn_by': {'figure3': 'figures/fig3_reversal.py', 'figure4': 'figures/fig6_tasks.py',
+                     'figure5': 'figures/fig4_prices.py', 'figure6': 'figures/fig5_boundary.py'},
         'all_observations_retained': True, 'input_sha256': provenance}, ensure_ascii=False, indent=2) + '\n')
     print('tables for Figures 3-6 written to', SRC)
 

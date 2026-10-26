@@ -1,4 +1,4 @@
-"""Figure 4: lower operation prices move the reversals but do not remove them.
+"""Figure 5: lower operation prices move the reversals but do not remove them.
 
 Figure contract
 - Claim: across all 45 lookup and quantum-geometry price combinations, forward
@@ -13,7 +13,7 @@ Figure contract
   Paris and Barcelona pairs that appear only at lower prices.
 
 Every combination and every source is drawn. The values asserted below are the
-ones reported in Table 2 and Section 3.2.
+ones reported in Table 3 and Section 3.3.
 """
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
@@ -150,4 +150,4 @@ keys += S.stacked_keys(fig, ax_b, [im_b], ["Median Q/C"], [15, 25, 35], ["15", "
 for ax, letter in zip([ax_a, ax_b, ax_c, ax_d], "abcd"):
     S.panel_label(ax, letter)
 
-S.save(fig, "figure4_prices", exclude_axes=keys)
+S.save(fig, "figure5_prices", exclude_axes=keys)

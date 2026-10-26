@@ -56,7 +56,6 @@ windows.draw(place(2, 93, 44, 44 * windows.SIZE_MM[1] / windows.SIZE_MM[0]))
 index.draw(place(50, 95, 46, 46 * index.SIZE_MM[1] / index.SIZE_MM[0]))
 routes.draw(place(99, 90, 46, 46 * routes.SIZE_MM[1] / routes.SIZE_MM[0]))
 reversal.draw(place(150, 87, *reversal.SIZE_MM))
-checklist.draw_risk(place(143, 60, *checklist.RISK_MM))
 
 # ---- Overlay in mm (y downwards) for headings, arrows and zoom lines -------------
 ov = fig.add_axes([0, 0, 1, 1], zorder=10)
@@ -86,8 +85,8 @@ flow((46.5, 106), (49.6, 106))                  # nested windows -> index
 flow((95.5, 104.75), (99.5, 104.75))             # index -> routes
 flow((145, 107), (150.3, 107))                # routes -> scale reversal
 flow((178, 86.8), (178, 81.7))                  # scale reversal -> checklist
-flow((151, 95), (146.5, 66.6), color=S.RISK, dashed=True, head=False, lw=0.9)   # risk: cost -> background
-flow((146.5, 59.8), (143, 42.8), color=S.RISK, dashed=True, lw=0.9)
+# Bow into the open space on the left; the sign of rad is the screen direction.
+flow((151, 95), (143, 42.8), color=S.RISK, dashed=True, rad=-0.42, lw=0.9)
 
 # Zoom lines from Rome on the world map to the top corners of the Rome tile.
 ax_world.apply_aspect()

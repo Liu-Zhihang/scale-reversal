@@ -1,4 +1,4 @@
-"""Figure 6: crossing into lower access cost does not identify better backgrounds.
+"""Figure 4: crossing into lower access cost does not identify better backgrounds.
 
 Figure contract
 - Claim: for observed-speed reconstruction, crossings and standardized
@@ -11,8 +11,8 @@ Figure contract
 - (b) contrast: their difference with 95% date-block intervals against the
   prespecified five-point decision band.
 
-Sources follow Table 3. Sources without forward crossings stay visible. The
-pooled values asserted below are the ones reported in Section 3.4.
+Sources follow Table 2. Sources without forward crossings stay visible. The
+pooled values asserted below are the ones reported in Section 3.2.
 """
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
@@ -127,4 +127,4 @@ ax_b.legend(handles=[Line2D([], [], marker="o", ms=3.4, ls="none", color=S.INK, 
 S.panel_label(ax_a, "a", dx_pt=-112)
 S.panel_label(ax_b, "b", dx_pt=-12)
 
-S.save(fig, "figure6_tasks")
+S.save(fig, "figure4_tasks")

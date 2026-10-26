@@ -66,12 +66,16 @@ and library versions. The optional audit helpers need PyMuPDF.
 | `fig1_assemble.py` | `figure1_framework.png`, plus `figure1_parts/figure1_assembled.pdf` and `.svg` |
 | `fig2_geography.py` | `figure2_observation_geography.png` |
 | `fig3_reversal.py` | `figure3_reversal.png` |
-| `fig4_prices.py` | `figure4_prices.png` |
-| `fig5_boundary.py` | `figure5_boundary_geography.png` |
-| `fig6_tasks.py` | `figure6_tasks.png` |
+| `fig4_prices.py` | `figure5_prices.png` |
+| `fig5_boundary.py` | `figure6_boundary_geography.png` |
+| `fig6_tasks.py` | `figure4_tasks.png` |
 | `figS1_cities.py` | `figureS1_cities.png` |
 | `figS2_same_answer.py` | `figureS2_same_answer.png` |
 | `figS3_monitoring.py` | `figureS3_monitoring.png` |
+
+Script names keep their earlier numbering. The output names follow the
+current figure order, in which the task comparison is Figure 4, prices
+Figure 5 and the resource boundary Figure 6.
 
 Shared modules: `paths.py` (locations), `style.py` (palette, type, Elsevier
 export rules and the audit gate), `maps.py` (map layers) and
@@ -90,10 +94,10 @@ Table names keep their historical numerical prefixes:
 | Table | Built by | Used by |
 | --- | --- | --- |
 | `figure2_extent_grid.csv`, `figure2_pairs.csv.gz`, `figure2_sources.csv` | statistics | Figure 3 |
-| `figure3_prices.csv`, `figure3_sources.csv` | statistics | Figure 4 |
-| `figure4_phase.csv.gz`, `figure4_geography.csv` | statistics | Figure 5 |
-| `figure5_sources.csv`, `figure5_families.csv` | statistics | Figure 6 |
-| `figure2_anchor_counts.csv` | geography | Figures 2, 5 and S1 |
+| `figure3_prices.csv`, `figure3_sources.csv` | statistics | Figure 5 |
+| `figure4_phase.csv.gz`, `figure4_geography.csv` | statistics | Figure 6 |
+| `figure5_sources.csv`, `figure5_families.csv` | statistics | Figure 4 |
+| `figure2_anchor_counts.csv` | geography | Figures 2, 6 and S1 |
 | `density_grids/<source>.json` | geography | Figures 2 and S1 |
 | `figure1_design.json` | geography | design numbers quoted with Figure 1 |
 | `figureS2_full_day_d.csv` | supplied with the data | Supplementary Fig. S2 |
