@@ -1,0 +1,15 @@
+{
+  "tree": "packed_rtree",
+  "status": "COMPLETE",
+  "counts": {
+    "outside_study_domain": 642,
+    "unsupported_index_span": 144,
+    "partial_domain": 199,
+    "eligible_nonempty": 97,
+    "eligible_empty": 1
+  },
+  "build_seconds": 0.1155824011657387,
+  "elapsed_seconds": 3.902842218056321,
+  "ledger_sha256": "fe664e97a2dd1bfb43b0a8cf94ad6d83cc397ae58a952283d06fc2e746950c27",
+  "peak_rss_bytes": 151486464
+}

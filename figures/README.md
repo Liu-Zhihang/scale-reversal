@@ -5,8 +5,9 @@ Figures S1-S3 and the twelve Figure 1 parts. They also build the figure
 source tables from the sealed evidence archive. The figure layer depends only
 on standard scientific Python packages, not on `qrq` or `scale_reversal`.
 
-No data are included in this repository. Every input and output location is
-read from environment variables (see `paths.py`).
+Figure source tables are in `evidence/figure_source`. The Rome taxi traces
+used for one layer of Figure 1 are not included. Every input and output
+location is read from environment variables (see `paths.py`).
 
 ## Quick start
 

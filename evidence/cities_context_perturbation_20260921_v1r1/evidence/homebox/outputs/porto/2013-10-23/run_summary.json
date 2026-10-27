@@ -1,0 +1,74 @@
+{
+  "source_id": "porto",
+  "city": "Porto",
+  "date": "2013-10-23",
+  "n": 200455,
+  "started_utc": "2026-09-20T21:36:59.109346+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "outside_study_domain": 642,
+        "unsupported_index_span": 144,
+        "partial_domain": 199,
+        "eligible_nonempty": 97,
+        "eligible_empty": 1
+      },
+      "build_seconds": 0.17703733686357737,
+      "elapsed_seconds": 4.830501227872446,
+      "ledger_sha256": "25f2d72ec5f227b96afbcc3651e1b6d9d8b4a515770f9d76cd58b82505a05cf0",
+      "peak_rss_bytes": 169988096
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "outside_study_domain": 642,
+        "unsupported_index_span": 144,
+        "partial_domain": 199,
+        "eligible_nonempty": 97,
+        "eligible_empty": 1
+      },
+      "build_seconds": 0.0824327350128442,
+      "elapsed_seconds": 9.667910221032798,
+      "ledger_sha256": "6b76a99cbf501c7c98be29980efb06ad849e8675b5f735b65651ebbb86579e9a",
+      "peak_rss_bytes": 175112192
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "outside_study_domain": 642,
+        "unsupported_index_span": 144,
+        "partial_domain": 199,
+        "eligible_nonempty": 97,
+        "eligible_empty": 1
+      },
+      "build_seconds": 0.10617522615939379,
+      "elapsed_seconds": 7.721749293152243,
+      "ledger_sha256": "1eb59a7534d42b61f002bde89b565d22ab47005290e5885cde142495ab492438",
+      "peak_rss_bytes": 175112192
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "porto",
+    "2013-10-23"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "8789f2184007771057e3b168ae532adaa9738d2f1d337338326db118d6354f1c",
+  "status": "COMPLETE",
+  "legacy_regression": "OLD_MAIN_EMPTY_OR_UNSUPPORTED; exact K checked, no old positive cost row",
+  "direct_boolean_checks": 4,
+  "query_K_checks": 492,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 200455,
+  "ended_utc": "2026-09-20T21:37:21.688798+00:00",
+  "elapsed_seconds": 22.58000040706247,
+  "peak_rss_bytes": 175112192
+}

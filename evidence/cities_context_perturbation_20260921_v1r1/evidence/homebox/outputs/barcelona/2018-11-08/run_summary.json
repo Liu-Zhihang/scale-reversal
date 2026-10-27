@@ -1,0 +1,68 @@
+{
+  "source_id": "barcelona",
+  "city": "Barcelona",
+  "date": "2018-11-08",
+  "n": 9191,
+  "started_utc": "2026-09-20T21:37:27.214121+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 881,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 58
+      },
+      "build_seconds": 0.004809012869372964,
+      "elapsed_seconds": 0.9490552837960422,
+      "ledger_sha256": "4612863c30bb0de60ba1de4f4c476238d2fa53c3312534a91bac1b6135ad2e4a",
+      "peak_rss_bytes": 75464704
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 881,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 58
+      },
+      "build_seconds": 0.0022098601330071688,
+      "elapsed_seconds": 0.9188813301734626,
+      "ledger_sha256": "5454bd47d9883708e08b779ad5c82195560df3353e7bf9d1e070faae2b72d1da",
+      "peak_rss_bytes": 75702272
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 881,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 58
+      },
+      "build_seconds": 0.0035090199671685696,
+      "elapsed_seconds": 0.834812365937978,
+      "ledger_sha256": "ec2c9607c653d5d46aa165997be0ffd9f6ff0e5545b857c802e1a73616f7ccc5",
+      "peak_rss_bytes": 75743232
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "barcelona",
+    "2018-11-08"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "0bc084e9af8da2c99bc580cd33c94683dbe40431540214487fb49e197aa197bd",
+  "status": "COMPLETE",
+  "legacy_regression": "OLD_MAIN_EMPTY_OR_UNSUPPORTED; exact K checked, no old positive cost row",
+  "direct_boolean_checks": 21,
+  "query_K_checks": 4005,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 9191,
+  "ended_utc": "2026-09-20T21:37:30.107803+00:00",
+  "elapsed_seconds": 2.894462428987026,
+  "peak_rss_bytes": 75743232
+}

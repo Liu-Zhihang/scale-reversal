@@ -1,0 +1,14 @@
+family,source,median_stratum_spearman,finite_strata,total_strata
+monitoring,dublin,0.20399213085243006,2,2
+monitoring,jinan,0.04306853060016273,12,12
+monitoring,portici,-0.0283969465648855,9,12
+monitoring,zurich,0.15182276910015835,12,12
+speed,barcelona,0.06675981201584577,9,12
+speed,brighton_shl,-0.160084010963772,2,2
+speed,jinan,0.026313281624632492,12,12
+speed,montreal,0.10609246638405728,12,12
+speed,rio,0.032278300735154496,12,12
+speed,rome_taxi,0.006739670129391152,12,12
+speed,sf_cabspotting,0.05165586445972785,12,12
+speed,stellenbosch,-0.11369554390314107,12,12
+speed,tdrive,0.01772182429908843,12,12

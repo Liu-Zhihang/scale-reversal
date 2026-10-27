@@ -1,0 +1,71 @@
+{
+  "source_id": "sf_cabspotting",
+  "city": "San Francisco",
+  "date": "2008-05-27",
+  "n": 380342,
+  "started_utc": "2026-09-20T21:39:22.847834+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 374,
+        "eligible_nonempty": 441,
+        "unsupported_index_span": 144,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.3277451591566205,
+      "elapsed_seconds": 41.68809029413387,
+      "ledger_sha256": "9567462db24dadb4ed1c09ad2617ca42a016d155ecb8546d718c776d357abce7",
+      "peak_rss_bytes": 263098368
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 374,
+        "eligible_nonempty": 441,
+        "unsupported_index_span": 144,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.16060971398837864,
+      "elapsed_seconds": 60.073457191931084,
+      "ledger_sha256": "32bc17c47cbf7fc83fe9dc3d62bf14ee719a8a378d762eb7bcc689b83b3cb48f",
+      "peak_rss_bytes": 264957952
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 374,
+        "eligible_nonempty": 441,
+        "unsupported_index_span": 144,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.2603159509599209,
+      "elapsed_seconds": 34.91087756399065,
+      "ledger_sha256": "4dcc44c4b5f73fb3e7762a39ce15e4c4881b3358cf994abc6e34515f64862536",
+      "peak_rss_bytes": 264957952
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "sf_cabspotting",
+    "2008-05-27"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "1c5cfcbfd497e09b5a84bca33b842c5e05a8dfa2543e8d70b11b4cf988967a6e",
+  "status": "COMPLETE",
+  "legacy_regression": "PASS_K_AND_L1_ENVELOPE",
+  "direct_boolean_checks": 16,
+  "query_K_checks": 3501,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 380342,
+  "ended_utc": "2026-09-20T21:41:40.674401+00:00",
+  "elapsed_seconds": 137.82709471299313,
+  "peak_rss_bytes": 264957952
+}

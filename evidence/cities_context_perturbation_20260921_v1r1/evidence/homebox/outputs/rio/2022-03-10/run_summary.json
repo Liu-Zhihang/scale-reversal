@@ -1,0 +1,74 @@
+{
+  "source_id": "rio",
+  "city": "Rio de Janeiro",
+  "date": "2022-03-10",
+  "n": 2597917,
+  "started_utc": "2026-09-20T21:37:37.055455+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 138,
+        "unsupported_index_span": 144,
+        "partial_domain": 318,
+        "eligible_nonempty": 183,
+        "outside_study_domain": 300
+      },
+      "build_seconds": 2.897666352102533,
+      "elapsed_seconds": 25.117827913025394,
+      "ledger_sha256": "7dbe6137cb91dd81f26eccd1e6a58bde61f85d8372713579e61c8b07b940965d",
+      "peak_rss_bytes": 1346441216
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 138,
+        "unsupported_index_span": 144,
+        "partial_domain": 318,
+        "eligible_nonempty": 183,
+        "outside_study_domain": 300
+      },
+      "build_seconds": 2.691467390861362,
+      "elapsed_seconds": 46.319205085979775,
+      "ledger_sha256": "a3e493855e1a6acfb8ee31ec9311c38385de222eeaa8b010c8e917c985f69077",
+      "peak_rss_bytes": 1362530304
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 138,
+        "unsupported_index_span": 144,
+        "partial_domain": 318,
+        "eligible_nonempty": 183,
+        "outside_study_domain": 300
+      },
+      "build_seconds": 2.41555632208474,
+      "elapsed_seconds": 24.227762883063406,
+      "ledger_sha256": "a6d2ad0482ca3277294ca03d5ce4cd3810c4eaa95f28159a75446642ffe78b58",
+      "peak_rss_bytes": 1362530304
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "rio",
+    "2022-03-10"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "1cbc142336a149625d5c27c8155c01190bad80d9da2014ebd4d2ed01f9b265ac",
+  "status": "COMPLETE",
+  "legacy_regression": "PASS_K_AND_L1_ENVELOPE",
+  "direct_boolean_checks": 8,
+  "query_K_checks": 1425,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 2597917,
+  "ended_utc": "2026-09-20T21:39:16.164956+00:00",
+  "elapsed_seconds": 99.11000539199449,
+  "peak_rss_bytes": 1362530304
+}

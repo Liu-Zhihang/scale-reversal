@@ -1,0 +1,13 @@
+{
+  "tree": "packed_rtree",
+  "status": "COMPLETE",
+  "counts": {
+    "eligible_empty": 925,
+    "unsupported_index_span": 144,
+    "eligible_nonempty": 14
+  },
+  "build_seconds": 0.0007164138369262218,
+  "elapsed_seconds": 0.5411471319384873,
+  "ledger_sha256": "9146bd4371426f471cb75a34b801a1ab43789ab72257c423cc88561f424c1644",
+  "peak_rss_bytes": 70864896
+}

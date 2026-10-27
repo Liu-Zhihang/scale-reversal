@@ -1,0 +1,68 @@
+{
+  "source_id": "stellenbosch",
+  "city": "Stellenbosch",
+  "date": "2022-04-11",
+  "n": 1819,
+  "started_utc": "2026-09-20T21:38:32.649128+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 892,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 47
+      },
+      "build_seconds": 0.0014014220796525478,
+      "elapsed_seconds": 0.7196536690462381,
+      "ledger_sha256": "679cfb8e5358ab1a779ca4724c89b081110028ce777bbe58196ec111f093cb97",
+      "peak_rss_bytes": 72183808
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 892,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 47
+      },
+      "build_seconds": 0.0004706562031060457,
+      "elapsed_seconds": 0.6887785932049155,
+      "ledger_sha256": "b2e7a766edb650094c9ca4ef0482ecb81b2e5882d5adcb3475593b1b02a81f37",
+      "peak_rss_bytes": 72183808
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 892,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 47
+      },
+      "build_seconds": 0.0007078491616994143,
+      "elapsed_seconds": 0.6675868150778115,
+      "ledger_sha256": "2cc6b12fe6786ac38073bcfb47c8bc044ae8a9a0561fd133b9ab7770971752e6",
+      "peak_rss_bytes": 72450048
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "stellenbosch",
+    "2022-04-11"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "4cdb877df9c2402090fd6b250aac4d868e42238b7f7bd4324e6cacb0bfc2ba41",
+  "status": "COMPLETE",
+  "legacy_regression": "OLD_MAIN_EMPTY_OR_UNSUPPORTED; exact K checked, no old positive cost row",
+  "direct_boolean_checks": 21,
+  "query_K_checks": 4005,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 1819,
+  "ended_utc": "2026-09-20T21:38:34.897093+00:00",
+  "elapsed_seconds": 2.248511089012027,
+  "peak_rss_bytes": 72450048
+}

@@ -31,11 +31,12 @@ Figure rendering needs the extra `figures` dependencies (`pip install ".[figures
 
 ## Reproduce the published numbers
 
-Sealed evidence is not included; it derives from restricted trajectory
-records. With the archive root in `SR_EVIDENCE`:
+Derived tables, per-tree cost ledgers and figure source tables are in
+`evidence/`. Raw trajectory and monitoring records are not included.
+With the archive root in `SR_EVIDENCE`:
 
 ```bash
-SR_EVIDENCE=/path/to/archive python -m scale_reversal all --check
+SR_EVIDENCE=evidence python -m scale_reversal all --check
 ```
 
 Exit status 0 means the cohort, the price sweep, the
@@ -70,7 +71,7 @@ evaluation checklist.
 ![Monitoring contrasts in Jinan and Dublin](docs/figures/figureS3_monitoring.png)
 
 ```bash
-SR_FIGURE_DATA=/path/to/source_data SR_EVIDENCE=/path/to/archive python figures/make_all.py
+SR_FIGURE_DATA=evidence/figure_source SR_EVIDENCE=evidence python figures/make_all.py
 ```
 
 See `figures/README.md`. The Rome trajectory layer of Figure 1 needs the

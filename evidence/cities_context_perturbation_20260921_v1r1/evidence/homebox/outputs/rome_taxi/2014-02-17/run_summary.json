@@ -1,0 +1,71 @@
+{
+  "source_id": "rome_taxi",
+  "city": "Rome",
+  "date": "2014-02-17",
+  "n": 860306,
+  "started_utc": "2026-09-20T21:42:24.949858+00:00",
+  "completed_trees": [
+    {
+      "tree": "packed_rtree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 257,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 558,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.6939373500645161,
+      "elapsed_seconds": 75.68762170313857,
+      "ledger_sha256": "d3ca1a916635a24c0c08a6cd47b1955549b4b9ef7b2700aa8835043ca29d578a",
+      "peak_rss_bytes": 499130368
+    },
+    {
+      "tree": "tb_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 257,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 558,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.5747170320246369,
+      "elapsed_seconds": 63.970938025042415,
+      "ledger_sha256": "67e906d345874bc3c98e6bf43e316a7ffee4baf8e1b74a18bc4a9651d383f365",
+      "peak_rss_bytes": 513101824
+    },
+    {
+      "tree": "kd_tree",
+      "status": "COMPLETE",
+      "counts": {
+        "eligible_empty": 257,
+        "unsupported_index_span": 144,
+        "eligible_nonempty": 558,
+        "partial_domain": 124
+      },
+      "build_seconds": 0.648531632963568,
+      "elapsed_seconds": 50.7915544139687,
+      "ledger_sha256": "1fc8a920b4eb5e32700c714ff98aa68e748c13c4ad1c73b68887a0107a9a0488",
+      "peak_rss_bytes": 514002944
+    }
+  ],
+  "command": [
+    "/data/repo/projects/quantum_mobility_cities12/operations/cities_context_perturbation_20260921_v1r1/src/worker.py",
+    "--case",
+    "rome_taxi",
+    "2014-02-17"
+  ],
+  "config_sha256": "5f64bddbe316049ec739ba5a80159910ac3e1f68e7b463c17e6d7657d3f1bf67",
+  "worker_sha256": "3ab6c7dd38466bdba29f0ecca2b7caf542d386642a000aa353400a7bf8a1ec98",
+  "point_sha256": "627e0c769ef6dfbd7579b5ade729e8479d0aa2aa62805b8630ff4dea3a39e81d",
+  "status": "COMPLETE",
+  "legacy_regression": "PASS_K_AND_L1_ENVELOPE",
+  "direct_boolean_checks": 16,
+  "query_K_checks": 3501,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "numpy": "2.4.6",
+  "binary_sha256": "485ab49f2b378f6335f824a96c957e69c50f01a32f966b9406a739aa7825e1f9",
+  "full_day_record_count": 860306,
+  "ended_utc": "2026-09-20T21:45:37.362831+00:00",
+  "elapsed_seconds": 192.41347157605924,
+  "peak_rss_bytes": 514002944
+}

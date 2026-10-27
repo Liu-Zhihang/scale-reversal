@@ -1,0 +1,32 @@
+{
+  "sources": 14,
+  "days": 107,
+  "points": 101240625,
+  "widths_m": [
+    250,
+    500,
+    1000,
+    2000,
+    5000,
+    10000
+  ],
+  "durations_s": [
+    900,
+    3600,
+    21600,
+    86400
+  ],
+  "centres_s": [
+    21600,
+    43200,
+    64800
+  ],
+  "trees": [
+    "packed_rtree",
+    "tb_tree",
+    "kd_tree"
+  ],
+  "requests_per_day": 648,
+  "monitoring_tasks": 4,
+  "speed_sources": 9
+}

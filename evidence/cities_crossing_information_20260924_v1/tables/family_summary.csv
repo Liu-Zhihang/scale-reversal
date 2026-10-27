@@ -1,0 +1,3 @@
+family,sources,source_days,forward_n,forward_ties,used_forward_n,excluded_forward_no_control,forward_worse_rate,standardised_control_worse_rate,delta,forward_ci_low,forward_ci_high,control_ci_low,control_ci_high,delta_ci_low,delta_ci_high,valid_bootstrap_draws,invalid_bootstrap_draws,operational_label
+speed,9,65,1242,0,1242,0,0.5636070853462157,0.563508288802984,9.879654323174947e-05,0.525182001199349,0.6026785714285714,0.525672556929357,0.6058860100379926,-0.0441600769112122,0.045455110183843475,5000,0,NO_INFORMATION_OPERATIONAL
+monitoring,4,26,242,0,242,0,0.5537190082644629,0.3965008857250237,0.15721812253943918,0.424390243902439,0.6586113612595863,0.29609691625125606,0.5028984927630582,0.013084450322009163,0.2828681980286238,5000,0,CROSSING_WORSE

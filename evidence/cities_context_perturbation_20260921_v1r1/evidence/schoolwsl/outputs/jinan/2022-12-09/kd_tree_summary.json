@@ -1,0 +1,13 @@
+{
+  "tree": "kd_tree",
+  "status": "COMPLETE",
+  "counts": {
+    "eligible_empty": 337,
+    "unsupported_index_span": 144,
+    "eligible_nonempty": 602
+  },
+  "build_seconds": 2.337370794004528,
+  "elapsed_seconds": 29.66573741097818,
+  "ledger_sha256": "f75add4dd05b8162f844528b0082563fa6207d4a49fe2fc03ee14d23a34090dd",
+  "peak_rss_bytes": 1565388800
+}

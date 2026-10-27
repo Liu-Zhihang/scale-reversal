@@ -69,10 +69,9 @@ tables are reproduced exactly.
 ## Which data are restricted
 
 The record files are derived from licensed or access-controlled mobility
-data and stay on the data-owning machines. They are not distributed. The
-following sealed artefacts are derived from them and are also not part of
-this repository; access to them is governed by the terms of the underlying
-sources:
+data and stay with their providers. They are not in this repository. The
+derived artefacts below are included under `evidence/`, and access to them
+remains governed by the terms of the underlying sources:
 
 * **per-tree ledgers**, 321 files
   `<root>/<host>/outputs/<source>/<date>/<tree>.jsonl.gz`. Each line holds
@@ -138,20 +137,20 @@ published-number checks.
    pytest
    ```
 
-3. Point `SR_EVIDENCE` at the sealed archive root. Each artefact defaults to
+3. Point `SR_EVIDENCE` at `evidence` in this repository. Each artefact defaults to
    its run directory under that root and can be overridden (`SR_LEDGERS`,
    `SR_COHORT_TABLES`, `SR_COHORT_INPUTS`, `SR_SWEEP_TABLES`, `SR_AA_TABLES`,
    `SR_TASK_ARCHIVE`; see `scale_reversal.evidence`). Then either print and
    check the published numbers:
 
    ```bash
-   SR_EVIDENCE=/path/to/archive python -m scale_reversal all --check
+   SR_EVIDENCE=evidence python -m scale_reversal all --check
    ```
 
    or run the sealed regressions:
 
    ```bash
-   SR_EVIDENCE=/path/to/archive pytest tests/test_sealed_cohort.py tests/test_sealed_sweep.py tests/test_sealed_amplified.py tests/test_sealed_tasks.py -v
+   SR_EVIDENCE=evidence pytest tests/test_sealed_cohort.py tests/test_sealed_sweep.py tests/test_sealed_amplified.py tests/test_sealed_tasks.py -v
    ```
 
    * `test_sealed_cohort.py` recomputes every ledger cost, rebuilds the

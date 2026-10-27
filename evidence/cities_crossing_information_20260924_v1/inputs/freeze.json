@@ -1,0 +1,61 @@
+{
+  "frozen_at": "2026-09-24",
+  "inputs": {
+    "cities_speed_reconstruction_stage2_20260923_v1/tables/pairs.csv.gz": {
+      "sha256": "0d671ecaa0b6b741b3d07069d338af42873e1717b2fff81d0796b740959e423a",
+      "bytes": 338508,
+      "manifest": "cities_speed_reconstruction_stage2_20260923_v1/artifact_manifest.json",
+      "manifest_sha256": "9de54d078fb300b0032544a8cac68a709f2c9e8128452cb691bfde9299c2e9d0"
+    },
+    "cities_speed_reconstruction_stage2_20260923_v1/tables/endpoints.csv.gz": {
+      "sha256": "49befaa8b4251a34ba9ba5ce150dd08b70589dbc7d0812a0487742f187ed9047",
+      "bytes": 620169,
+      "manifest": "cities_speed_reconstruction_stage2_20260923_v1/artifact_manifest.json",
+      "manifest_sha256": "9de54d078fb300b0032544a8cac68a709f2c9e8128452cb691bfde9299c2e9d0"
+    },
+    "cities_jinan_e1_20260921_v1r1/tables/scale_pairs.csv": {
+      "sha256": "89a0aeeec80193810a5c5dbf0f13de245411ec98ea3307b6a9d046482e3c4f70",
+      "bytes": 288881,
+      "manifest": "cities_jinan_e1_20260921_v1r1/artifact_manifest.json",
+      "manifest_sha256": "1beb75d4597f25ece26a6b4856ac725680ef266fa9de1fb87727d7572bdb5f80"
+    },
+    "cities_jinan_e1_20260921_v1r1/tables/endpoints.csv": {
+      "sha256": "ed92b1097483861d9f8de2ac161842f21633a46b9b856da9afdc9b13ebcdd3ae",
+      "bytes": 230859,
+      "manifest": "cities_jinan_e1_20260921_v1r1/artifact_manifest.json",
+      "manifest_sha256": "1beb75d4597f25ece26a6b4856ac725680ef266fa9de1fb87727d7572bdb5f80"
+    },
+    "cities_dublin_e2_20260922_v1/tables/scale_pairs.csv": {
+      "sha256": "07fa97d45692caca222528f87eaf7773569e7bf1f714aa1906ad2ec8ab96f7b9",
+      "bytes": 49359,
+      "manifest": "cities_dublin_e2_20260922_v1/artifact_manifest.json",
+      "manifest_sha256": "3ba56e140a604cf3699141863f6bbc217450e0196cb51eaa297fe8374eb7be2d"
+    },
+    "cities_dublin_e2_20260922_v1/tables/endpoints.csv": {
+      "sha256": "a0a62136aba08cf6aa7bf2c22192bcc4a619b4af3cd4eb3aa426a1f765cf7346",
+      "bytes": 118820,
+      "manifest": "cities_dublin_e2_20260922_v1/artifact_manifest.json",
+      "manifest_sha256": "3ba56e140a604cf3699141863f6bbc217450e0196cb51eaa297fe8374eb7be2d"
+    },
+    "cities_monitoring_e3e4_20260923_v1/aggregation_r1/tables/task_scale_pairs.csv.gz": {
+      "sha256": "8255131e2970dd9ad10c5d303ed78db1c84c88569bbc86abfc1e26f32965cd50",
+      "bytes": 99097,
+      "manifest": "cities_monitoring_e3e4_20260923_v1/artifact_manifest.json",
+      "manifest_sha256": "aa69f665b9f9ca062391f5427a23a6d99f37d5fdc89ab8058ee6bf10146fddd7"
+    },
+    "cities_monitoring_e3e4_20260923_v1/aggregation_r1/tables/task_endpoints.csv": {
+      "sha256": "fc1993336dcf9fe345845add7862a0b3c9f2fe36bb542285c7fd27cc300d0f52",
+      "bytes": 309666,
+      "manifest": "cities_monitoring_e3e4_20260923_v1/artifact_manifest.json",
+      "manifest_sha256": "aa69f665b9f9ca062391f5427a23a6d99f37d5fdc89ab8058ee6bf10146fddd7"
+    },
+    "design.md": {
+      "sha256": "131c2997f4b28689eb3f58c6dde51898a99ee6c5831e65a58be3a8e715763452",
+      "bytes": 5377
+    },
+    "implementation_freeze.md": {
+      "sha256": "ba99746f47f996970eae78f85f25a45dd003268569be0b97289fb8398dbd0904",
+      "bytes": 4485
+    }
+  }
+}

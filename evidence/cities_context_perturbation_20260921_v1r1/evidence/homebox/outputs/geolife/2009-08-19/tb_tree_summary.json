@@ -1,0 +1,13 @@
+{
+  "tree": "tb_tree",
+  "status": "COMPLETE",
+  "counts": {
+    "eligible_empty": 852,
+    "unsupported_index_span": 144,
+    "eligible_nonempty": 87
+  },
+  "build_seconds": 0.010238959919661283,
+  "elapsed_seconds": 1.4647787830326706,
+  "ledger_sha256": "4808e4f90514ccba9ad6e84c9ca0feeb66a7a2a6a2ac82e059b28a4b7705040a",
+  "peak_rss_bytes": 85041152
+}
