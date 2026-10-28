@@ -1,10 +1,11 @@
 # scale-reversal
 
-Computations for one manuscript on scale reversal in quantum range queries
-for urban mobility data. This package does not reimplement the query engine.
-Window evaluation, access-route accounting, pricing and repricing all call
+Computations for the manuscript *Rethinking uncertain geographic context and
+scale in urban trajectory data through hybrid quantum range queries*. This
+package does not reimplement the query engine. Window evaluation, access-route
+accounting, pricing and repricing all call
 [qrq](https://pypi.org/project/qrq/) 0.2.0, a general library for quantum
-range queries over spatio-temporal records. qrq contains no study-specific
+range queries over spatiotemporal records. qrq contains no study-specific
 code; everything particular to this study lives here.
 
 ## What is here
@@ -48,34 +49,67 @@ are in `docs/reproduction.md`; the public sources are listed in
 
 ## Figures
 
-Previews of the manuscript figures. The scripts in `figures/` redraw Figures
-1-6 and Supplementary Figures S1-S3 from the source tables. Figure 7 is the
-evaluation checklist.
+The landing page keeps the four figures that carry the argument. Each one is
+followed by what it shows. Geography, the price sweep, the resource boundary
+and the supplementary checks are explained in
+[docs/figures.md](docs/figures.md), with the same previews. The scripts in
+`figures/` redraw Figures 1–6 and Supplementary Figures S1–S3 from the source
+tables. Figure 7 is the evaluation checklist; its preview is the black-and-white
+flowchart used in the manuscript.
 
-![One window, two decisions](docs/figures/figure1_framework.png)
+### Figure 1. One space-time window, two decisions
 
-![Where the observations are](docs/figures/figure2_observation_geography.png)
+The same window is both a priced query and the background of a held-out urban
+estimate. Classical-led preparation resolves the matching records and then
+prepares the output, at cost C. Quantum filtering, the hybrid quantum
+algorithm evaluated here, prepares a frontier of M candidates and repeats
+prepare-and-test about M/K times, at cost Q. Enlarging the window can reverse
+which route is cheaper. The dashed arrow marks the risk of choosing a
+background because it lowers access cost. The index, circuit and cost curves
+are schematic. The Rome taxi layer is not redistributed with this repository.
+
+![One space-time window, two decisions](docs/figures/figure1_framework.png)
+
+### Figure 3. Enlarging the window can make quantum filtering the cheaper route
+
+Under the main prices, enlarging one step turned quantum filtering from the
+costlier route into the cheaper one in 1,060 of 17,592 adjacent-scale pairs,
+across 11 of 13 cities. Warm bins in panel (b) are those forward reversals;
+the dark points are the 11 crossings in the opposite direction. Paris and
+Barcelona, the open circles in panel (d), have none. Overlapping windows are
+not independent replications, and a lower quantum cost is not yet a claim
+about the urban reading.
 
 ![Enlarging the window can make quantum filtering the cheaper route](docs/figures/figure3_reversal.png)
 
+### Figure 4. Cheaper windows do not reconstruct urban readings better
+
+Crossing into lower quantum cost did not improve speed reconstruction.
+Mobile-monitoring estimates worsened more often than after comparable
+enlargements that did not cross, by 15.7 percentage points in the reported
+contrast. Panel (b) is that difference. Filled markers meet the prespecified
+rule; open markers carry no information, which does not mean the two shares
+are equivalent. Barcelona, Stellenbosch and Portici have no forward crossing.
+
 ![Cheaper windows do not reconstruct urban readings better](docs/figures/figure4_tasks.png)
 
-![Prices move scale reversal but do not remove it](docs/figures/figure5_prices.png)
+### Figure 7. Checklist for a quantum urban data-access claim
 
-![Reversals follow record accumulation, not simply the city centre](docs/figures/figure6_boundary_geography.png)
+Nine questions run in four steps: fix the background by the task before any
+cost is seen, compare routes that return the same output, test a grid of
+prices and how often the query must be prepared again, and report every width,
+duration and negative result. The checklist guides reporting. It is not a
+procurement score and does not say that a service is ready.
 
-![Checklist for a quantum data-access claim](docs/figures/figure7_checklist.png)
-
-![Same-answer intervention](docs/figures/figureS2_same_answer.png)
-
-![Monitoring contrasts in Jinan and Dublin](docs/figures/figureS3_monitoring.png)
+![Checklist for a quantum urban data-access claim](docs/figures/figure7_checklist.png)
 
 ```bash
 SR_FIGURE_DATA=evidence/figure_source SR_EVIDENCE=evidence python figures/make_all.py
 ```
 
-See `figures/README.md`. The Rome trajectory layer of Figure 1 needs the
-taxi records from their provider and is not redistributed.
+See `figures/README.md` and [docs/figures.md](docs/figures.md). The Rome
+trajectory layer of Figure 1 needs the taxi records from their provider and
+is not redistributed.
 
 ## License
 

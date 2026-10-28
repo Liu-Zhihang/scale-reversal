@@ -5,6 +5,11 @@ Figures S1-S3 and the twelve Figure 1 parts. They also build the figure
 source tables from the sealed evidence archive. The figure layer depends only
 on standard scientific Python packages, not on `qrq` or `scale_reversal`.
 
+Explained previews are in [docs/figures.md](../docs/figures.md). The
+repository landing page shows Figures 1, 3, 4 and 7 with short explanations.
+Figures 2, 5, 6, S2 and S3 are documented only on that page. Figure 7 is the
+checklist flowchart; it is not produced by these scripts.
+
 Figure source tables are in `evidence/figure_source`. The Rome taxi traces
 used for one layer of Figure 1 are not included. Every input and output
 location is read from environment variables (see `paths.py`).
